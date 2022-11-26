@@ -1,0 +1,9 @@
+@import "./variables.css";
+@import "./libs/normilize/normilize.css";
+@import "./fonts.css";
+@import "./sections/common/header.css";
+@import "./sections/common/typography.css";
+@import "./sections/common/main.css";
+@import "./sections/common/aside.css";
+@import "./sections/news.css";
+@import "./sections/common/footer.css";

@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black-500);
+}
+
+h1,
+.heading-1 {
+  font-size: 44px;
+  line-height: 64px;
+}
+
+h2,
+.heading-2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h3,
+.heading-3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h4,
+.heading-4 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h5,
+.heading-5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h6,
+.heading-6 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-center {text-align: center;}
