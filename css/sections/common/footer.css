@@ -1,0 +1,126 @@
+.footer {
+  padding: 12px 0;
+  border-top: 1px solid var(--gray-300);
+}
+
+.footer-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 15px;
+}
+
+.footer-links a,
+.footer-links p {
+  display: inline-block;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--black-600);
+  transition: 0.3s ease;
+}
+
+.footer-links a:not(:last-child),
+.footer-links p:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer-links a:hover {color: var(--blue);}
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-social a {
+  display: block;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.footer-social a img {width: 100%;}
+
+.footer-social a:not(:last-child) {margin-right: 12px;}
+
+@media (min-width: 1200px) {
+  .footer-social a:hover {opacity: 0.85;}
+}
+
+@media (max-width: 1300px) {
+  .footer-links p {
+    width: 100%;
+    max-width: 128px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer-links p {
+    width: auto;
+    max-width: initial;
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+  }
+
+  .footer {
+    padding: 32px 0 20px;
+  }
+  
+  .footer-cnt {
+    display: block;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 36px;
+  }
+  
+  .footer-links a,
+  .footer-links p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .footer-links a:not(:last-child),
+  .footer-links p:not(:last-child) {
+    margin: 0 0 12px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-social a {
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+  }
+  
+  .footer-social a:not(:last-child) {margin-right: 20px;}
+}
+
+
+@media (max-width: 359px) {
+  .footer-social a:not(:last-child) {margin-right: 10px;}
+}

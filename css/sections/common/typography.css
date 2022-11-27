@@ -34,6 +34,14 @@ h3,
   line-height: 32px;
 }
 
+@media (max-width: 960px) {
+  h3,
+  .heading-3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
 h4,
 .heading-4 {
   font-size: 20px;
@@ -53,3 +61,48 @@ h6,
 }
 
 .text-center {text-align: center;}
+
+.title {
+  margin-bottom: 16px;
+  color: var(--black-600);
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.title-row h3 {color: var(--black-600);}
+
+.title-row a,
+.title-row-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0670EB;
+  transition: 0.3s ease;
+}
+
+.title-row-link {display: none;}
+
+@media (min-width: 1200px) {
+  .title-row a:hover {opacity: 0.8;}
+}
+
+@media (max-width: 960px) {
+  .title-row a {display: none;}
+  .title-row-link {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+}
