@@ -120,6 +120,17 @@
 
 @media (max-width: 960px) {
   .header-row nav a img {display: block;}
+  .header .header-top-social {display: flex; justify-content: space-between;}
+  .header .header-top-social a {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .header .header-top-social a::before {display: none;}
+  .header .header-top-social a:not(:last-child) {margin-right: 12px;}
+
+
   .header-triggers {
     display: flex;
     align-items: center;
