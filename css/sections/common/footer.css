@@ -54,7 +54,7 @@
   transition: 0.3s ease;
 }
 
-.social a img {width: 100%;}
+.social a img {width: 100%; height: auto;}
 
 .social a:not(:last-child) {margin-right: 12px;}
 

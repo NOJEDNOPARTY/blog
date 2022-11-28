@@ -19,7 +19,10 @@
   max-width: 139px;
 }
 
-.header .logo img {width: 100%;}
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
 
 .header-row nav {
   width: 100%;
