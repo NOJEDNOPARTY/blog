@@ -61,7 +61,10 @@
   min-height: 16px;
 }
 
-.header-row nav a img {margin-right: 8px;}
+.header-row nav a img {
+  display: none;
+  margin-right: 8px;
+}
 
 .header-row nav a::before {
   content: '';
@@ -88,7 +91,8 @@
 }
 
 .header-triggers,
-.header-top-head {
+.header-top-head,
+.header .header-top-social {
   display: none;
 }
 
@@ -104,7 +108,7 @@
   .header-top nav a span {
     display: inline-block;
     width: 100%;
-    max-width: 70px;
+    /* max-width: 70px; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -112,6 +116,7 @@
 }
 
 @media (max-width: 960px) {
+  .header-row nav a img {display: block;}
   .header-triggers {
     display: flex;
     align-items: center;
@@ -140,12 +145,12 @@
     position: absolute;
     z-index: 5;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
+    max-width: 280px;
     height: 100vh;
-    padding: 10px 20px 80px;
+    padding: 12px 20px 80px;
     background-color: var(--white);
     overflow-y: scroll;
     transition: 0.3s ease;
@@ -162,10 +167,11 @@
     visibility: visible;
   }
 
-   .header-top nav ul {
+  .header-top nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 39px;
   }
   
   .header-top nav ul li {
@@ -173,11 +179,11 @@
   }
   
   .header-top nav a {
-    justify-content: center;
-    padding: 22px 0;
-    font-size: 18px;
-    line-height: 18px;
-    min-height: 18px;
+    justify-content: flex-start;
+    padding: 11px 0;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 24px;
   }
   
   .header-top nav li:not(:last-child) {margin: 0;}
@@ -198,7 +204,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
+  }
+
+  .header-top-head h4 {
+    color: var(--black-600);
   }
 
   .header-top-head a:not(.logo){
@@ -228,4 +238,9 @@
   }
   
   .header-bottom nav ul li {white-space: nowrap;}
+
+  .header-top-social {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -95,7 +95,7 @@ h6,
 .title-row-link {display: none;}
 
 @media (min-width: 1200px) {
-  .title-row a:hover {opacity: 0.8;}
+  .title-row a:hover {color: #005AC4;}
 }
 
 @media (max-width: 960px) {
