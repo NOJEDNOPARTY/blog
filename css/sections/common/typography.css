@@ -28,6 +28,16 @@ h2,
   line-height: 40px;
 }
 
+@media (max-width: 960px) {
+  h1,
+  .heading-1,
+  h2,
+  .heading-2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 h3,
 .heading-3 {
   font-size: 24px;
@@ -48,10 +58,26 @@ h4,
   line-height: 32px;
 }
 
+@media (max-width: 960px) {
+  h4,
+  .heading-4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 h5,
 .heading-5 {
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 960px) {
+  h5,
+  .heading-5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 h6,
@@ -105,4 +131,34 @@ h6,
     justify-content: flex-start;
     margin-top: 32px;
   }
+}
+
+.page-title { color: var(--black); }
+
+.page-title:not(:last-child) {margin-bottom: 8px;}
+
+@media (max-width: 960px) {
+  .page-title { text-align: center; }
+}
+
+.page-subtitle {
+  width: 100%;
+  max-width: 540px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black-600);
+}
+
+.page-subtitle:not(:last-child) {margin-bottom: 24px;}
+
+@media (max-width: 960px) {
+  .page-subtitle { 
+    margin: 0 auto;
+    text-align: center; 
+  }
+
+  .page-subtitle:not(:last-child) {margin-bottom: 32px;}
 }

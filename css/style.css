@@ -6,4 +6,6 @@
 @import "./sections/common/main.css";
 @import "./sections/common/aside.css";
 @import "./sections/news.css";
+@import "./sections/common/pagination.css";
+@import "./sections/common/sub.css";
 @import "./sections/common/footer.css";

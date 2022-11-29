@@ -5,6 +5,7 @@ let common = {
 	navigation: function() {
 		let bLazy = new Blazy({});
 
+		const menu = document.querySelector('.header-top nav');
 		const menuOpenButton = document.querySelector('.menu-open');
 		const menuCloseButton = document.querySelector('.menu-close');
 		const body = document.querySelector('body');
@@ -12,8 +13,13 @@ let common = {
 		let subForm = document.querySelector('.sub');
 
 		menuOpenButton.addEventListener('click', () => body.classList.add('menu-open'));
+
 		menuCloseButton.addEventListener('click', () => body.classList.remove('menu-open'));
+
+		window.addEventListener('click', e => !menu.contains(e.target) && !menuOpenButton.contains(e.target) && body.classList.remove('menu-open'));
+
 		subButton.addEventListener('click', () => subForm.classList.add('edit'));
+
 		subForm.addEventListener('submit', e => {
 			e.preventDefault();
 			subForm.classList.add('success');

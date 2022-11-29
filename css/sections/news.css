@@ -26,6 +26,10 @@
   transition: 0.3s ease;
 }
 
+@media (min-width: 1200px) {
+  .article:hover .article-img img {transform: scale(1.05);}
+}
+
 .article-title {
   display: inline-block;
   margin-bottom: 3px;
@@ -49,12 +53,51 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: var(--black);
+  color: var(--black-500);
+}
+
+.article-text {
+  margin-bottom: 6px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: var(--black-600);
 }
 
 @media (min-width: 1200px) {
   .article:hover .article-title {text-decoration: underline;}
 }
+
+.article-tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.article-tags span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black-500);
+}
+
+.article-tags span:not(:last-child) {margin-right: 16px;}
+
+.article-tags span img {margin-right: 8px;}
 
 @media (min-width: 961px) {
   .featured-list {
@@ -152,7 +195,7 @@
   position: relative;
   display: block;
   width: 100%;
-  border: 1px solid #F2F2F2;
+  border: 1px solid var(--gray-300);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -176,6 +219,10 @@
   object-fit: cover;
   object-position: center;
   transition: 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+  .main-article:hover .main-article-img {transform: scale(1.05);}
 }
 
 .main-article-cnt {
@@ -203,29 +250,7 @@
   .main-article:hover .main-article-title {text-decoration: underline;}
 }
 
-.main-article-tags {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: row wrap;
-}
-
-.main-article-tags span {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 4px 0;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
-
-.main-article-tags span:not(:last-child) {margin-right: 16px;}
-
-.main-article-tags span img {margin-right: 8px;}
+.main-article .article-tags span {color: var(--white);}
 
 @media (max-width: 1200px) {
   .main-article::before {
@@ -279,6 +304,10 @@
   transition: 0.3s ease;
 }
 
+@media (min-width: 1200px) {
+  .sub-article:hover .sub-article-img {transform: scale(1.05);}
+}
+
 .sub-article::after {
   content: '';
   z-index: 1;
@@ -323,7 +352,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 @media (max-width: 1200px) {
@@ -399,4 +428,69 @@
 
 @media (max-width: 960px) {
   .recent-list:not(:last-child) {margin-bottom: 32px;}
+}
+
+.categories-article {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.categories-article:not(:last-child) {
+  margin-bottom: 27px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.categories-article .article-img {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 180px;
+  max-height: 180px;
+  margin-right: 24px;
+}
+
+.categories-article .article-img::before {padding-top: 53%;}
+
+.categories-article .article-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  -webkit-line-clamp: 3;
+}
+
+@media (max-width: 1300px) {
+  .categories-article .article-img {
+    width: 278px;
+    min-width: 278px;
+    max-width: 278px;
+  }
+}
+
+@media (max-width: 960px) {
+  .categories-article { display: block; }
+  
+  .categories-article:not(:last-child) {
+    margin-bottom: 32px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .categories-article .article-img {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 225px;
+    max-height: 250px;
+    margin: 0 0 16px;
+  }
+  
+  .categories-article .article-img::before {padding-top: 66%;}
+  
+  .categories-article .article-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
