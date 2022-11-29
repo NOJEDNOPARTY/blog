@@ -86,6 +86,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  white-space: nowrap;
   padding: 4px 0;
   font-family: 'Poppins';
   font-style: normal;
