@@ -7,7 +7,7 @@
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 650px;
   list-style: none;
@@ -36,7 +36,7 @@
 
 @media (min-width: 1200px) {
   .pagination-item:not(.active):not(.disabled) a:hover {
-    opacity: 0.85;
+    background: #D9D9D9;
   }
 }
 
@@ -50,12 +50,38 @@
   background: #D9D9D9;
 }
 
+.pagination-arrow a {
+  height: 40px;
+  min-height: 40px;
+  min-width: 120px;
+}
+
 .pagination-item:not(:last-child) {margin-right: 4px;}
 
 .pagination-arrow img:first-child {margin-right: 6px;}
 .pagination-arrow img:last-child {margin-left: 6px;}
 
+.pagination-arrow:first-child {margin-right: 115px;}
+.pagination-arrow:last-child {margin-left: 115px;}
+
+@media (max-width: 1300px) {
+  .pagination-arrow:first-child {margin-right: 80px;}
+  .pagination-arrow:last-child {margin-left: 80px;}
+}
+
 @media (max-width: 960px) {
   .pagination {max-width: 343px;}
+  .pagination-arrow a {
+    min-width: 40px;
+    width: 40px;
+    max-width: 40px;
+  }
   .pagination-arrow span {display: none;}
+  .pagination-arrow:first-child {margin-right: 0px;}
+  .pagination-arrow:last-child {margin-left: 0px;}
+}
+
+
+@media (max-width: 370px) {
+  .pagination-arrow {display: none;}
 }
