@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 1200px) {
-  .pagination-item:not(.active) a:not([disabled]):hover {
+  .pagination-item:not(.active):not(.disabled) a:hover {
     opacity: 0.85;
   }
 }
