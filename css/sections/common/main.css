@@ -152,3 +152,31 @@ input:focus {
 }
 
 form.edit input:invalid {border: 1px solid #E30A00;}
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 2px;
+}
+
+.breadcrumbs a {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: var(--black-600);
+	transition: 0.3s ease;
+}
+
+.breadcrumbs a img {margin-right: 6px;}
+
+@media (min-width: 1200px) {
+	.breadcrumbs a:hover {
+		color: #626465;
+	}
+}

@@ -162,3 +162,7 @@ h6,
 
   .page-subtitle:not(:last-child) {margin-bottom: 32px;}
 }
+
+.subtitle {text-align: center;}
+
+.subtitle:not(:last-child) {margin-bottom: 16px;}
