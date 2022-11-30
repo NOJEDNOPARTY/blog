@@ -4,6 +4,10 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
   max-height: 170px;
 }
 
@@ -24,6 +28,10 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
   transition: 0.3s ease;
 }
 
@@ -199,6 +207,10 @@
   width: 100%;
   border: 1px solid var(--gray-300);
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
   overflow: hidden;
 }
 
@@ -221,6 +233,11 @@
   object-fit: cover;
   object-position: center;
   transition: 0.3s ease;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
 }
 
 @media (min-width: 1200px) {
@@ -282,6 +299,10 @@
   width: 100%;
   max-width: 379px;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
   overflow: hidden;
   margin-right: 32px;
   max-height: 216px;
@@ -303,6 +324,11 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -khtml-border-radius: 8px;
   transition: 0.3s ease;
 }
 
