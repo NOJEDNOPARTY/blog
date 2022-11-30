@@ -8,6 +8,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
   max-height: 170px;
 }
 
@@ -32,6 +35,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
   transition: 0.3s ease;
 }
 
@@ -211,6 +217,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
   overflow: hidden;
 }
 
@@ -238,6 +247,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
 }
 
 @media (min-width: 1200px) {
@@ -303,6 +315,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
   overflow: hidden;
   margin-right: 32px;
   max-height: 216px;
@@ -329,6 +344,9 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   -khtml-border-radius: 8px;
+  transform: translateZ(0);
+  z-index: 0;
+  will-change: transform;
   transition: 0.3s ease;
 }
 
