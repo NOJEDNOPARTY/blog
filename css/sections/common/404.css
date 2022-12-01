@@ -1,0 +1,47 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 0 24px;
+}
+
+.main-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.error-page img {
+  max-width: 404px;
+  max-height: 120px;
+  margin-bottom: 40px;
+}
+
+.error-page h1 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--black-600);
+}
+
+.error-page p {
+  margin-bottom: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--black-600);
+}
+
+
+@media (max-width: 960px) {
+  .error-page img {
+    max-width: 242px;
+    max-height: 72px;
+    margin-bottom: 24px;
+  }
+}

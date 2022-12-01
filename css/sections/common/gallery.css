@@ -1,0 +1,121 @@
+.gallery  {
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-wrap {width: 100%;}
+
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery ul li {
+  padding: 0;
+  margin: 0 !important;
+}
+
+.gallery ul li:before {display: none;}
+
+.gallery-item {
+  display: block;
+}
+
+.gallery-item,
+.gallery-item img {
+  width: 100%;
+}
+
+.gallery-item img {
+  width: 101%;
+}
+
+/* splide__arrow--prev */
+
+.gallery .splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  background: transparent;
+}
+
+.gallery .splide__arrow svg {display: none;}
+
+.gallery .splide__arrow.splide__arrow--prev {
+  left: 0;
+  background-image: url(../../../images/rrl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+.gallery .splide__arrow.splide__arrow--next {
+  right: 0;
+  background-image: url(../../../images/rrr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+@media (min-width: 1200px) {
+  .gallery .splide__arrow:not([disabled]):hover {
+    background-color: rgba(34, 34, 34, 0.1);
+  }
+}
+
+.gallery-wrap {
+  position: relative;
+}
+
+.gallery-count {
+  position: absolute;
+  bottom: 11px;
+  left: 11px;
+  padding: 4px 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -1.85px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black-600);
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+}
+
+@media (max-width: 960px) {
+  .gallery-wrap {
+    width: calc(100% + 32px);
+    padding: 0 21px;
+    margin-left: -16px;
+    margin-right: -16px;
+    overflow: hidden;
+  }
+  .gallery {
+    border: none;
+    border-radius: 0;
+  }
+  .gallery .splide__arrow {display: none;}
+  .gallery,
+  .gallery-list {
+    overflow: initial;
+    padding: 0 !important;
+  }
+  .gallery-item {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .gallery .splide__slide:not(:last-child) {margin-right: 10px !important;}
+  .gallery-count {left: 33px;}
+}

@@ -61,7 +61,7 @@
 
 @media (min-width: 1200px) {
 	.author-link:hover {
-		opacity: 0.85;
+		color: #005AC4;
 	}
 }
 
@@ -73,6 +73,7 @@
     min-width: 96px;
     height: 96px;
   }
+  .author {margin-bottom: 29px;}
 }
 
 @media (min-width: 961px) {
@@ -84,6 +85,8 @@
   
   .author-articles .featured-list .featured-article {
     width: calc((100% / 4) - 24px);
-    margin: 0 12px 32px;
+    margin: 0 12px 28px;
   }
+
+  .author-articles .featured-list .pagination-wrap {margin-top: 2px;}
 }

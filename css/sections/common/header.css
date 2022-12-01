@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 24px;
-  padding: 22px 0;
+  padding: 23px 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -74,6 +74,7 @@
 .header-row nav li:not(:last-child) {margin-right: 36px;}
 
 .header-bottom nav a {
+  padding: 20px 0;
   font-size: 13px;
   line-height: 16px;
   min-height: 16px;
@@ -81,7 +82,7 @@
 
 .header-row nav a img {
   display: none;
-  margin-right: 8px;
+  margin-right: 13px;
 }
 
 .header-row nav a::before {
@@ -92,7 +93,7 @@
   right: 0;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--black-600);
   transition: 0.3s ease;
   opacity: 0;
@@ -103,15 +104,26 @@
 }
 
 @media (min-width: 1200px) {
-  .header-row nav a:hover::before {
+  .header-row nav a:not(.active):hover::before {
     opacity: 1;
+    background: #B3B3B3;
   }
 }
 
 .header-triggers,
 .header-top-head,
-.header .header-top-social {
+.header .header-top-social,
+.header-top-social-wrap {
   display: none;
+}
+
+.header-top-social-wrap  p {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--black-600);
 }
 
 @media (max-width: 1360px) {
@@ -121,6 +133,10 @@
   
   .header-row nav a {
     padding: 23px 0;
+  }
+
+  .header-bottom nav a {
+    padding: 20px 0;
   }
 
   .header-top nav a span {
@@ -136,6 +152,10 @@
 @media (max-width: 960px) {
   .header-row nav a img {display: block;}
 
+  .header-top-social-wrap {
+    display: block;
+  }
+  
   .header .header-top-social {
     display: flex; 
     justify-content: flex-start;
@@ -163,6 +183,7 @@
 
   .header-triggers a {
     display: block;
+    margin-right: 5px;
   }
 
   .header-triggers a:not(:last-child) {margin-right: 16px;}
@@ -203,7 +224,7 @@
     width: 100%;
     max-width: 280px;
     height: 100vh;
-    padding: 12px 20px 80px;
+    padding: 12px 20px 20px;
     background-color: var(--white);
     overflow-y: scroll;
     opacity: 0;
@@ -238,7 +259,7 @@
   
   .header-top nav a {
     justify-content: flex-start;
-    padding: 11px 0;
+    padding: 8px 0;
     font-size: 14px;
     line-height: 24px;
     min-height: 24px;
@@ -262,7 +283,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
   }
 
   .header-top-head h4 {
@@ -279,6 +300,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    transform: translate(5px, 0px);
   }
   
   .header-row nav .header-top-head a::before {
@@ -302,3 +324,11 @@
     justify-content: space-between;
   }
 }
+
+
+.menu-close {
+  width: 100%;
+  max-width: 20px;
+}
+
+.menu-close img {max-width: 100%; height: auto;}

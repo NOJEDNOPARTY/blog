@@ -73,8 +73,6 @@
 }
 
 @media (max-width: 960px) {
-  .footer {margin-top: 64px;}
-
   .footer-links p {
     width: auto;
     max-width: initial;
