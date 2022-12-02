@@ -99,6 +99,8 @@
   opacity: 0;
 }
 
+.header-top nav a::before {height: 2px;}
+
 .header-row nav a.active::before {
   opacity: 1;
 }
@@ -178,7 +180,8 @@
   }
 
   .header-top {
-    padding: 10px 0;
+    padding: 8px 0;
+    min-height: 60px;
   }
 
   .header-triggers a {
@@ -193,7 +196,8 @@
   }
   
   .header .logo {
-    max-width: 117px;
+    max-width: 113px;
+    transform: translate(-1px, 1px);
   }
 
   .header-row .nav-wrap {

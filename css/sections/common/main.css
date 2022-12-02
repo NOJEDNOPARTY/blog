@@ -36,7 +36,7 @@ html, body {
 	width: 100%;
 	max-width: 640px;
 	margin: 0 auto 32px;
-	color: var(--black);
+	color: var(--black-600);
 }
 
 .rw {
@@ -55,9 +55,6 @@ html, body {
 }
 
 .rw-sidebar {
-  position: -webkit-sticky;
-  position: sticky;
-	top: 10px;
 	width: 100%;
 	max-width: 300px;
 	padding-bottom: 36px;

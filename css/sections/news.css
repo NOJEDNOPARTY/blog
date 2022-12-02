@@ -623,7 +623,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--black-500);
+  color: var(--black-600);
 }
 
 .article-head-tags span:not(:last-child) {margin-right: 20px;}

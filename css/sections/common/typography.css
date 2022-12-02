@@ -117,7 +117,7 @@ h6,
   }
 }
 
-.page-title { color: var(--black); }
+.page-title { color: var(--black-600); }
 
 .page-title:not(:last-child) {margin-bottom: 8px;}
 
@@ -516,5 +516,15 @@ h6,
   }
 
   .rw-art {margin-bottom: 24px;}
+
+  .rw-art .rw-sidebar {display: none;}
+
+  .rw-art .categories-article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .rw-art .rw-main:not(:last-child) {margin-bottom: 0;}
   
 }
