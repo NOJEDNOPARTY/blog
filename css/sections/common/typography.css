@@ -162,7 +162,8 @@ h6,
   color: var(--black-600);
 }
 
-.default-content > img {
+.default-content > img,
+.default-content > figure img {
   width: 100%;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -174,6 +175,19 @@ h6,
   will-change: transform;
 }
 
+.default-content > figure figcaption {
+  display: block;
+  margin-top: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black-500);
+}
+
+.default-content > img:not(:last-child) {margin-bottom: 24px;}
+.default-content > figure:not(:last-child) {margin-bottom: 24px;}
 .default-content > img:not(:last-child) {margin-bottom: 24px;}
 .default-content > img:first-child:not(:last-child) {margin-bottom: 42px;}
 .default-content h1:not(:last-child) {margin-bottom: 24px;}
