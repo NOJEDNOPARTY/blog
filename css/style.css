@@ -1,6 +1,7 @@
 @import "./variables.css";
 @import "./libs/normilize/normilize.css";
 @import "./fonts.css";
+@import "./sections/common/form.css";
 @import "./sections/common/404.css";
 @import "./sections/common/header.css";
 @import "./sections/common/typography.css";

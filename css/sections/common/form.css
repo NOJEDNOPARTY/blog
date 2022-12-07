@@ -1,0 +1,121 @@
+input {
+	width: 100%;
+	padding: 0 12px;
+	background: #FFFFFF;
+	border: 1px solid var(--gray-100);
+	border-radius: 4px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 38px;
+	color: var(--black-600);
+	transition: 0.3s ease;
+	box-shadow: none;
+	outline: none;
+	background-color: var(--white);
+}
+
+input:not(:last-child) {
+	width: calc(100% - 48px);
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--gray-400);
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: var(--gray-400);
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: var(--gray-400);
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: var(--gray-400);
+}
+
+@media (min-width: 1200px) {
+  input:hover {
+    border: 1px solid var(--gray-400);
+  }
+}
+
+input:focus {
+	border: 1px solid #6D1EC1;
+}
+
+textarea {
+	width: 100%;
+  min-height: 97px;
+	padding: 8px 24px 24px 12px;
+	border: 1px solid var(--gray-100);
+	border-radius: 4px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+	color: var(--black-600);
+	transition: 0.3s ease;
+	box-shadow: none;
+	outline: none;
+	background: var(--white);
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--gray-400);
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+  color: var(--gray-400);
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+  color: var(--gray-400);
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: var(--gray-400);
+}
+
+@media (min-width: 1200px) {
+  textarea:hover {
+    border: 1px solid var(--gray-400);
+  }
+}
+
+textarea:focus {
+	border: 1px solid #6D1EC1;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.form-field p {
+  display: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E30A00;
+}
+
+.form-field span {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  display: inline-block;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--gray-400);
+}
+
+
+
+form.edit input:invalid,
+form.edit textarea:invalid {border: 1px solid #E30A00;}
