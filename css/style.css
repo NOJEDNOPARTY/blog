@@ -10,6 +10,7 @@
 @import "./sections/common/gallery.css";
 @import "./sections/news.css";
 @import "./sections/author.css";
+@import "./sections/common/comments.css";
 @import "./sections/common/pagination.css";
 @import "./sections/common/sub.css";
 @import "./sections/common/button.css";
