@@ -54,28 +54,28 @@ let common = {
     splide.on('moved', newIndex => galleryCountHandler(newIndex + 1));
 	},
 	form: function() {
-		let subButton = document.querySelector('.sub-form button');
-		let subForm = document.querySelector('.sub');
-
-		subButton.addEventListener('click', () => subForm.classList.add('edit'));
-		subForm.addEventListener('submit', e => {
+		document.querySelector('.sub-form button').addEventListener('click', () => document.querySelector('.sub').classList.add('edit'));
+		
+		document.querySelector('.sub').addEventListener('submit', e => {
 			e.preventDefault();
-			subForm.classList.add('success');
+			document.querySelector('.sub').classList.add('success');
 		});
 
-// 		1. Переключатели для ответов
-// 2. Переключатель показать больше комментов
-// 3. Форма отправки при не валидном, для текстареа
+		document.querySelectorAll('.comments-form [type="submit"]').forEach(btn => btn.addEventListener('click', () => {
+			console.log('btn');
+			btn.closest('.comments-form').classList.add('edit')
+		}));
 
-		let commentsTextarea = document.querySelectorAll('.comments-form .form-field textarea');
-		let commentsTextareaValue = document.querySelectorAll('.comments-form .form-field textarea').value;
-
-		commentsTextarea.forEach(textarea => textarea.addEventListener('keyup', () => {
+		document.querySelectorAll('.comments-form .form-field textarea').forEach(textarea => textarea.addEventListener('keyup', () => {
 			const textareaLabel = textarea.closest('label');
-			const textareaTextLength = textareaLabel.querySelector('span');
+			const textareaMaxLength = textarea.getAttribute('maxlength');
+			const textareaText = textareaLabel.querySelector('span');
 			const value = textarea.value.length;
 
-			textareaTextLength.innerHTML = 50 - value;
+			textareaText.innerHTML = textareaMaxLength - value;
+
+			value == textareaMaxLength ? textareaText.classList.add('red') : textareaText.classList.remove('red');
+
 		}));
 
 		document.querySelectorAll('.show-more-replies').forEach(btn => btn.addEventListener('click', e => {

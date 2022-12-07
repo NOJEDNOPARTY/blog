@@ -115,7 +115,12 @@ textarea:focus {
   color: var(--gray-400);
 }
 
+.form-field span.red {color: #E30A00;}
+
 
 
 form.edit input:invalid,
 form.edit textarea:invalid {border: 1px solid #E30A00;}
+
+form.edit input:invalid ~ p,
+form.edit textarea:invalid ~ p {display: block;}
