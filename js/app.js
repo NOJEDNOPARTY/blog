@@ -68,14 +68,12 @@ let common = {
 
 		document.querySelectorAll('.comments-form .form-field textarea').forEach(textarea => textarea.addEventListener('keyup', () => {
 			const textareaLabel = textarea.closest('label');
-			const textareaMaxLength = textarea.getAttribute('maxlength');
-			const textareaText = textareaLabel.querySelector('span');
+			const textareaMinLength = textarea.getAttribute('minlength');
+			const textareaText = textareaLabel.querySelector('span span');
 			const value = textarea.value.length;
 
-			textareaText.innerHTML = textareaMaxLength - value;
-
-			value == textareaMaxLength ? textareaText.classList.add('red') : textareaText.classList.remove('red');
-
+			if (value <= textareaMinLength)
+				textareaText.innerHTML = value;
 		}));
 
 		document.querySelectorAll('.show-more-replies').forEach(btn => btn.addEventListener('click', e => {

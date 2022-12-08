@@ -46,7 +46,22 @@ html, body {
 }
 
 .rw:not(:last-child) {margin-bottom: 16px;}
-.rw-article:not(:last-child) {margin-bottom: 40px;}
+.rw-article:not(:last-child) {margin-bottom: 0;}
+
+.rw-article:not(:last-child) .rw-main {
+	margin-bottom: 16px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+@media (max-width: 960px) {
+	.rw-article:not(:last-child) .rw-main {
+		margin-bottom: 40px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid #F2F2F2;
+	}
+	.rw-article:not(:last-child) {margin-bottom: 40px;}
+}
 
 .rw-main {
 	width: 100%;

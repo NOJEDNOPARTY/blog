@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: -7px;
 }
 
 .comments-form-bottom .btn:not(:last-child) {margin-right: 8px;}

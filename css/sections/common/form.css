@@ -101,9 +101,9 @@ textarea:focus {
   color: #E30A00;
 }
 
-.form-field span {
+.form-field > span {
   position: absolute;
-  bottom: 8px;
+  top: 70px;
   right: 12px;
   display: inline-block;
   font-family: 'Poppins';
@@ -116,6 +116,7 @@ textarea:focus {
 }
 
 .form-field span.red {color: #E30A00;}
+.form-field span.removed {opacity: 0;}
 
 
 
